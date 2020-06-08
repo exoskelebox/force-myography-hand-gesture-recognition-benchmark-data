@@ -38,7 +38,7 @@ The data file contains rows of sensor readings for each gesture.
 | column name        | description                                                                                  |
 | ------------------ | -------------------------------------------------------------------------------------------- |
 | repetition         | A numeric indication unique to a subject of the number of times a gesture has been repeated. |
-| timestamp          | An indication of the time of day, down to the nanosecond, a reading was captured.            |
+| timestamp          | An indication of the time, down to the nanosecond, a reading was captured. As the reference point is undefined, only the relative time between samples is valid.  |
 | wrist_sensor_[1-7] | A series of numeric values from the wrist sensors at the time of capture.                    |
 | arm_sensor_[1-8]   | A series of numeric values from the arm sensors at the time of capture.                      |
 | gesture            | An indication of the gesture that was performed.                                             |
