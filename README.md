@@ -1,6 +1,7 @@
+
 # Force Myography Hand Gesture Recognition Benchmark Data
 
-A benchmark dataset collected using a [commercially available sensor setup](https://www.bioxgroup.dk/products-biox-armband/) from 20 persons covering 18 unique gestures.
+A benchmark dataset collected using a [commercially available sensor setup](https://www.bioxgroup.dk/products-biox-armband/) from 20 persons covering 18 unique gestures. The code related to our data collection process, can be found in the repository [data-collection](https://github.com/exoskelebox/data-collection).
 
 ## Structure
 
@@ -38,10 +39,19 @@ The data file contains rows of sensor readings for each gesture.
 | column name        | description                                                                                  |
 | ------------------ | -------------------------------------------------------------------------------------------- |
 | repetition         | A numeric indication unique to a subject of the number of times a gesture has been repeated. |
-| timestamp          | An indication of the time, down to the nanosecond, a reading was captured. As the reference point is undefined, only the relative time between samples is valid.  |
+| timestamp          | An indication of the time, down to the microsecond, a reading was captured. As the reference point is undefined, only the relative time between samples is valid.  |
 | wrist_sensor_[1-7] | A series of numeric values from the wrist sensors at the time of capture.                    |
 | arm_sensor_[1-8]   | A series of numeric values from the arm sensors at the time of capture.                      |
 | gesture            | An indication of the gesture that was performed.                                             |
+
+# Use case
+Code related to a number of model implementations trained on the benchmark dataset provided here can be found in the repository [model-training](https://github.com/exoskelebox/model-training).  Using the dataset, we trained three differently configured fully connected neural networks (FCNN), progressive neural networks (PNN) and combined progressive neural networks  (CPNN) for each subject and used the average accuracy of the models as a scoring metric. The results of which, can be seen in the table below.
+ 
+|Dense 1|Dense 2|Dense 3|Dropout|FCNN    |CPNN    |PNN    |
+|-------|-------|-------|-------|--------|--------|-------|
+|256    |-      |-      |0.4    |77.59%  |78.12%  |76.65% |
+|256    |32     |-      |0.1    |77.81%  |78.28%  |75.42% |
+|256    |64     |32     |0.3    |78.14%  |77.11%  |76.27% |
 
 # License
 
