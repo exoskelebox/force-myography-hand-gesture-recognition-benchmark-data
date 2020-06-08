@@ -13,6 +13,7 @@ The subjects file contains a row of subject related contextual information for e
 
 | column name                   | description                                                                                                         |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| subject_id                    | A numeric identifier of the subject.                                                                                    |
 | subject_gender                | An indication of subject gender.                                                                                    |
 | subject_age                   | A numeric indication of subject age.                                                                                |
 | subject_fitness               | A numeric indication of subject fitness i.e. the number of days a week where the subject exercises for 30+ minutes. |
@@ -27,6 +28,7 @@ The calibration file contains a row of calibration data for each subject.
 
 | column name                  | description                                                                                   |
 | ---------------------------- | --------------------------------------------------------------------------------------------- |
+| subject_id                   | A numeric identifier of the subject.                                                          |
 | wrist_calibration_iterations | A numeric indication of the number of calibration steps taken to calibrate the wrist sensors. |
 | arm_calibration_iterations   | A numeric indication of the number of calibration steps taken to calibrate the arm sensors.   |
 | wrist_sensor_[1-7]           | A series of numeric values from the wrist sensors at the final wrist calibration step.        |
@@ -38,6 +40,7 @@ The data file contains rows of sensor readings for each gesture.
 
 | column name        | description                                                                                  |
 | ------------------ | -------------------------------------------------------------------------------------------- |
+| subject_id         | A numeric identifier of the subject.                                                         |
 | repetition         | A numeric indication unique to a subject of the number of times a gesture has been repeated. |
 | timestamp          | An indication of the time, down to the microsecond, a reading was captured. As the reference point is undefined, only the relative time between samples is valid.  |
 | wrist_sensor_[1-7] | A series of numeric values from the wrist sensors at the time of capture.                    |
