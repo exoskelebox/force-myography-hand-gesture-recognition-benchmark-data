@@ -31,7 +31,7 @@ The calibration file contains a row of calibration data for each subject.
 | wrist_sensor_[1-7]           | A series of numeric values from the wrist sensors at the final wrist calibration step.        |
 | arm_sensor_[1-8]             | A series of numeric values from the arm sensors at the final arm calibration step.            |
 
-### Data
+### Sensor readings
 
 The data file contains rows of sensor readings for each gesture.
 
