@@ -69,12 +69,13 @@ Neither Aalborg University nor any of the researchers involved can guarantee the
 # Citation
 
 If you use the benchmark data for your research, please cite the following paper. 
-         
+<pre>     
 @misc{andersen2020force,
-    title={Force myography benchmark data for hand gesture recognition and transfer learning},
-    author={Thomas Buhl Andersen and Rógvi Eliasen and Mikkel Jarlund and Bin Yang},
-    year={2020},
-    eprint={2007.14918},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+  title={Force myography benchmark data for hand gesture recognition and transfer learning},
+  author={Thomas Buhl Andersen and Rógvi Eliasen and Mikkel Jarlund and Bin Yang},
+  year={2020},
+  eprint={2007.14918},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
 }
+</pre>   
