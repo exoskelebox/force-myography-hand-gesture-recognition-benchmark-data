@@ -1,7 +1,7 @@
 
-# Force Myography Hand Gesture Recognition Benchmark Data
+# Force myography benchmark data for hand gesture recognition and transfer learning
 
-A benchmark dataset collected using a [commercially available sensor setup](https://www.bioxgroup.dk/products-biox-armband/) from 20 persons covering 18 unique gestures. The code related to our data collection process, can be found in the repository [data-collection](https://github.com/exoskelebox/data-collection).
+A force myography hand gesture benchmark dataset collected using a [commercially available sensor setup](https://www.bioxgroup.dk/products-biox-armband/) from 20 persons covering 18 unique gestures. We hope the benchmark data will facilitate the comparison among different hand gesture recognition algorithms. In addition, when considering different persons as different domains or tasks, it can also work as a benchmark dataset for evaluating transfer learning and multi-task learning. The code related to our data collection process, can be found in the repository [data-collection](https://github.com/exoskelebox/data-collection).
 
 ## Structure
 
@@ -61,7 +61,20 @@ Code related to a number of model implementations trained on the benchmark datas
 Neither Aalborg University nor any of the researchers involved can guarantee the correctness of the data, its suitability for any particular purpose, or the validity of results based on the use of the data set. The data set may be used for any research purposes under the following conditions:
 
 1.  The user may not state or imply any endorsement from Aalborg University or the researchers who produced it.
-2.  The user must acknowledge the use of the data set in publications resulting from the use of the data set.
+2.  The user must acknowledge the use of the data set in publications resulting from the use of the data set (see the Citation section for details.).
 3.  The user may redistribute the data set, including transformations, so long as it is distributed under these same license conditions.
 4.  The user may not use this information for any commercial or revenue-bearing purposes without first obtaining permission from a faculty member of the Department of Computer Science at Aalborg University.
 5.  In no event shall Aalborg University, its affiliates or employees be liable to you for any damages arising out of the use or inability to use these programs (including but not limited to loss of data or data being rendered inaccurate).
+
+# Citation
+
+If you use the benchmark data for your research, please cite the following paper. 
+         
+@misc{andersen2020force,
+    title={Force myography benchmark data for hand gesture recognition and transfer learning},
+    author={Thomas Buhl Andersen and Rógvi Eliasen and Mikkel Jarlund and Bin Yang},
+    year={2020},
+    eprint={2007.14918},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
